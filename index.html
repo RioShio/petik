@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeTIK Jombang - Pesantren Teknologi Informasi & Komunikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0284c7', // Biru YBM PLN
+                        secondary: '#1e293b',
+                        accent: '#eab308' // Kuning
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black text-secondary flex items-center gap-2">
+                <span class="text-primary text-3xl">∞</span> PeTIK<span class="font-normal text-gray-500">Jombang</span>
+            </div>
+            <div class="hidden md:flex gap-6 font-semibold text-sm text-gray-600">
+                <a href="#" class="hover:text-primary transition">Home</a>
+                <a href="#profil" class="hover:text-primary transition">Profil</a>
+                <a href="#keunggulan" class="hover:text-primary transition">Program</a>
+                <a href="#mitra" class="hover:text-primary transition">Kerjasama</a>
+            </div>
+            <a href="https://wa.me/6281393963363" class="bg-accent text-secondary px-5 py-2 rounded-lg font-bold text-sm hover:bg-yellow-400 transition shadow-md">
+                Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 px-4 bg-secondary overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=80" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Welcome to PeTIK Jombang</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10">Pesantren yang Melahirkan Santri dengan Kemampuan IT. Mendidik generasi muda dhuafa menjadi ahli teknologi yang berakhlakul karimah.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-xl font-bold transition shadow-lg">Pendaftaran Mahasantri Baru</button>
+                <button class="bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-xl font-bold transition shadow-lg">Lihat Lokasi Maps</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang Kami -->
+    <section id="profil" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-secondary mb-4">Tentang PeTIK Jombang</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">Lembaga pendidikan binaan YBM PLN yang berfokus mencetak generasi muda terampil di bidang Teknologi Informasi dan Komunikasi (TIK) dalam waktu 1 tahun.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-primary text-4xl mb-4">🎯</div>
+                <h3 class="text-xl font-bold mb-3">Visi dan Misi</h3>
+                <p class="text-gray-500 text-sm">Kemajuan ilmu pengetahuan harus sejalan dengan pembentukan karakter nilai moral dan agama.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-primary text-4xl mb-4">🎓</div>
+                <h3 class="text-xl font-bold mb-3">Pendidikan Gratis</h3>
+                <p class="text-gray-500 text-sm">Fasilitas asrama, makan, uang saku, lab komputer spesifikasi tinggi, dan internet cepat secara cuma-cuma.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-primary text-4xl mb-4">🤝</div>
+                <h3 class="text-xl font-bold mb-3">Fokus Santri Dhuafa</h3>
+                <p class="text-gray-500 text-sm">Memberikan akses pendidikan setara bagi anak-anak dhuafa agar siap menghadapi dunia digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9 Keunggulan -->
+    <section id="keunggulan" class="py-20 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-secondary mb-12">9 Keunggulan PeTIK Jombang</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Cards -->
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">1. Gratis Biaya Pendidikan</h4>
+                    <p class="text-sm text-gray-500">Pendidikan bebas biaya untuk santri keluarga dhuafa.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">2. Fasilitas IT & Boarding</h4>
+                    <p class="text-sm text-gray-500">Asrama lengkap & lab komputer terbaik.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">3. Uang Saku</h4>
+                    <p class="text-sm text-gray-500">Diberikan selama masa pendidikan 1 tahun.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">4. Fokus IT Terapan</h4>
+                    <p class="text-sm text-gray-500">Spesialisasi Digital Marketing & Rekayasa Perangkat Lunak.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">5. Sertifikasi & Tahfidz</h4>
+                    <p class="text-sm text-gray-500">Bonus sertifikasi industri dan hafalan Al-Qur'an.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">6. Siap Kerja</h4>
+                    <p class="text-sm text-gray-500">Kurikulum dirancang agar lulusan relevan dengan industri.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">7. Transportasi Gratis</h4>
+                    <p class="text-sm text-gray-500">Biaya pemberangkatan dan kepulangan ditanggung.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">8. Pembinaan Karakter</h4>
+                    <p class="text-sm text-gray-500">Bekal diniyah ahlussunnah wal jamaah.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-left border border-gray-200">
+                    <h4 class="font-bold text-primary mb-2">9. Kemitraan Industri</h4>
+                    <p class="text-sm text-gray-500">Jaringan luas dengan perusahaan ternama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mitra -->
+    <section id="mitra" class="py-20 px-4 max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-secondary mb-12">Kerjasama dengan Mitra</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">YBM PLN</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">PLN</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">Icon Plus Surabaya</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-primary">PT. Dobelyuland</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">PT. Resikrek Jombang</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">PT. Master Prima</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">Deeva Tech</div>
+            <div class="p-4 border border-gray-200 rounded-xl bg-white shadow-sm font-bold text-gray-600">BBM Mandiri</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-xl mb-4">Address</h4>
+                <p class="text-sm leading-relaxed max-w-sm">
+                    Pesantren Teknologi Informasi dan Komunikasi Jombang YBM PLN<br>
+                    Jl. KH. Bisri Syansuri, RT.001/RW.005, Plosogeneng, Kec. Jombang, Kabupaten Jombang, Jawa Timur 61416
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-xl mb-4">Information</h4>
+                <ul class="text-sm space-y-2">
+                    <li>📞 WhatsApp: +62 813-9396-3363</li>
+                    <li>✉️ Email: petikjombang@gmail.com</li>
+                    <li>📷 Instagram: @petik_jombang</li>
+                    <li>📺 YouTube: @petikjombang</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; 2026 PeTIK Jombang | Privacy Policy | Terms of Use
+        </div>
+    </footer>
+
+</body>
+</html>
